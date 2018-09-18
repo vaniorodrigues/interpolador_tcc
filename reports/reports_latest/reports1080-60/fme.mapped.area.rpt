@@ -1,0 +1,42 @@
+ 
+****************************************
+Report : area
+Design : fme
+Version: L-2016.03-SP1
+Date   : Tue Nov 14 16:53:50 2017
+****************************************
+
+Library(s) Used:
+
+    tcbn45gsbwptc_ccs (File: /home/library/tsmc_library/45nm/nominal_vt/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwp_120a/tcbn45gsbwptc_ccs.db)
+
+Number of ports:                        53263
+Number of nets:                         92027
+Number of cells:                        36544
+Number of combinational cells:          20182
+Number of sequential cells:             14657
+Number of macros/black boxes:               0
+Number of buf/inv:                       5028
+Number of references:                       4
+
+Combinational area:              42705.205556
+Buf/Inv area:                     2945.880095
+Noncombinational area:           80986.830270
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                123692.035826
+Total area:                 undefined
+
+Core Area:                    206833
+Aspect Ratio:                 1.0003
+Utilization Ratio:            0.5980
+
+
+The above information was reported from the logical library. The following are from the physical library:
+
+  Total moveable cell area: 123692.0
+  Total fixed cell area: 0.0
+  Total physical cell area: 123692.0
+ Core area: 0.000, 0.000, 454.720, 454.860
+1

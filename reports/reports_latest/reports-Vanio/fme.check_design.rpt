@@ -1,0 +1,369 @@
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP1
+Date:        Tue Nov 14 17:14:57 2017
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     24
+    Unconnected ports (LINT-28)                                    18
+    Shorted outputs (LINT-31)                                       6
+
+Cells                                                             163
+    Cells do not drive (LINT-1)                                     1
+    Connected to power or ground (LINT-32)                         96
+    Nets connected to multiple pins on same cell (LINT-33)         66
+--------------------------------------------------------------------------------
+
+Warning: In design 'fme_operativo_DATA_WIDTH8', cell 'C1562' does not drive any nets. (LINT-1)
+Warning: In design 'buffer_verticais_DATA_WIDTH8', port 'in_9[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_verticais_DATA_WIDTH8', port 'in_10[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_verticais_DATA_WIDTH8', port 'in_11[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_verticais_DATA_WIDTH8', port 'in_12[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_verticais_DATA_WIDTH8', port 'in_13[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_verticais_DATA_WIDTH8', port 'in_14[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_verticais_DATA_WIDTH8', port 'in_15[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_verticais_DATA_WIDTH8', port 'in_16[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_verticais_DATA_WIDTH8', port 'in_17[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_diagonais_DATA_WIDTH8', port 'in_9[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_diagonais_DATA_WIDTH8', port 'in_10[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_diagonais_DATA_WIDTH8', port 'in_11[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_diagonais_DATA_WIDTH8', port 'in_12[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_diagonais_DATA_WIDTH8', port 'in_13[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_diagonais_DATA_WIDTH8', port 'in_14[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_diagonais_DATA_WIDTH8', port 'in_15[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_diagonais_DATA_WIDTH8', port 'in_16[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'buffer_diagonais_DATA_WIDTH8', port 'in_17[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'fme_controle_DATA_WIDTH8', output port 'modo_leitura' is connected directly to output port 'enable_buffers'. (LINT-31)
+Warning: In design 'fme_controle_DATA_WIDTH8', output port 'c0' is connected directly to output port 'enable_buffer_diagonais_c'. (LINT-31)
+Warning: In design 'fme_controle_DATA_WIDTH8', output port 'c0' is connected directly to output port 'enable_buffer_diagonais_b'. (LINT-31)
+Warning: In design 'fme_controle_DATA_WIDTH8', output port 'c1' is connected directly to output port 'direction_buffer_b'. (LINT-31)
+Warning: In design 'fme_controle_DATA_WIDTH8', output port 'c1' is connected directly to output port 'direction_buffer_a'. (LINT-31)
+Warning: In design 'fme_controle_DATA_WIDTH8', output port 'enable_buffer_verticais' is connected directly to output port 'enable_buffer_diagonais_a'. (LINT-31)
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_0[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_0[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_1[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_1[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_2[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_2[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_3[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_3[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_4[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_4[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_5[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_5[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_6[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_6[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_7[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_7[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_8[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_8[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_9[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_9[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_10[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_10[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_11[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_11[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_12[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_12[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_13[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_13[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_14[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_14[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_15[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_primario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_15[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_0[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_0[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_1[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_1[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_2[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_2[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_3[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_3[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_4[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_4[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_5[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_5[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_6[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_6[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_7[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_7[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_8[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_8[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_9[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_9[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_10[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_10[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_11[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_11[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_12[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_12[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_13[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_13[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_14[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_14[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_15[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_15[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_16[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_16[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_17[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_17[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_18[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_18[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_19[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_19[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_20[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_20[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_21[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_21[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_22[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_22[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_23[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_23[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_24[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_24[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_25[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_25[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_26[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_26[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_27[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_27[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_28[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_28[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_29[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_29[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_30[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_30[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_31[9]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', a pin on submodule 'mux_secundario' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_31[8]' is connected to logic 0. 
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_primario'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'in_0[9]', 'in_0[8]'', 'in_1[9]', 'in_1[8]', 'in_2[9]', 'in_2[8]', 'in_3[9]', 'in_3[8]', 'in_4[9]', 'in_4[8]', 'in_5[9]', 'in_5[8]', 'in_6[9]', 'in_6[8]', 'in_7[9]', 'in_7[8]', 'in_8[9]', 'in_8[8]', 'in_9[9]', 'in_9[8]', 'in_10[9]', 'in_10[8]', 'in_11[9]', 'in_11[8]', 'in_12[9]', 'in_12[8]', 'in_13[9]', 'in_13[8]', 'in_14[9]', 'in_14[8]', 'in_15[9]', 'in_15[8]'.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'in_0[9]', 'in_0[8]'', 'in_1[9]', 'in_1[8]', 'in_2[9]', 'in_2[8]', 'in_3[9]', 'in_3[8]', 'in_4[9]', 'in_4[8]', 'in_5[9]', 'in_5[8]', 'in_6[9]', 'in_6[8]', 'in_7[9]', 'in_7[8]', 'in_8[9]', 'in_8[8]', 'in_9[9]', 'in_9[8]', 'in_10[9]', 'in_10[8]', 'in_11[9]', 'in_11[8]', 'in_12[9]', 'in_12[8]', 'in_13[9]', 'in_13[8]', 'in_14[9]', 'in_14[8]', 'in_15[9]', 'in_15[8]', 'in_16[9]', 'in_16[8]', 'in_17[9]', 'in_17[8]', 'in_18[9]', 'in_18[8]', 'in_19[9]', 'in_19[8]', 'in_20[9]', 'in_20[8]', 'in_21[9]', 'in_21[8]', 'in_22[9]', 'in_22[8]', 'in_23[9]', 'in_23[8]', 'in_24[9]', 'in_24[8]', 'in_25[9]', 'in_25[8]', 'in_26[9]', 'in_26[8]', 'in_27[9]', 'in_27[8]', 'in_28[9]', 'in_28[8]', 'in_29[9]', 'in_29[8]', 'in_30[9]', 'in_30[8]', 'in_31[9]', 'in_31[8]'.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_0[7]' is connected to pins 'in_0[7]', 'in_16[7]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_0[6]' is connected to pins 'in_0[6]', 'in_16[6]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_0[5]' is connected to pins 'in_0[5]', 'in_16[5]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_0[4]' is connected to pins 'in_0[4]', 'in_16[4]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_0[3]' is connected to pins 'in_0[3]', 'in_16[3]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_0[2]' is connected to pins 'in_0[2]', 'in_16[2]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_0[1]' is connected to pins 'in_0[1]', 'in_16[1]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_0[0]' is connected to pins 'in_0[0]', 'in_16[0]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_1[7]' is connected to pins 'in_1[7]', 'in_17[7]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_1[6]' is connected to pins 'in_1[6]', 'in_17[6]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_1[5]' is connected to pins 'in_1[5]', 'in_17[5]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_1[4]' is connected to pins 'in_1[4]', 'in_17[4]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_1[3]' is connected to pins 'in_1[3]', 'in_17[3]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_1[2]' is connected to pins 'in_1[2]', 'in_17[2]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_1[1]' is connected to pins 'in_1[1]', 'in_17[1]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_1[0]' is connected to pins 'in_1[0]', 'in_17[0]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_2[7]' is connected to pins 'in_2[7]', 'in_18[7]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_2[6]' is connected to pins 'in_2[6]', 'in_18[6]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_2[5]' is connected to pins 'in_2[5]', 'in_18[5]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_2[4]' is connected to pins 'in_2[4]', 'in_18[4]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_2[3]' is connected to pins 'in_2[3]', 'in_18[3]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_2[2]' is connected to pins 'in_2[2]', 'in_18[2]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_2[1]' is connected to pins 'in_2[1]', 'in_18[1]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_2[0]' is connected to pins 'in_2[0]', 'in_18[0]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_3[7]' is connected to pins 'in_3[7]', 'in_19[7]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_3[6]' is connected to pins 'in_3[6]', 'in_19[6]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_3[5]' is connected to pins 'in_3[5]', 'in_19[5]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_3[4]' is connected to pins 'in_3[4]', 'in_19[4]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_3[3]' is connected to pins 'in_3[3]', 'in_19[3]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_3[2]' is connected to pins 'in_3[2]', 'in_19[2]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_3[1]' is connected to pins 'in_3[1]', 'in_19[1]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_3[0]' is connected to pins 'in_3[0]', 'in_19[0]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_4[7]' is connected to pins 'in_4[7]', 'in_20[7]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_4[6]' is connected to pins 'in_4[6]', 'in_20[6]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_4[5]' is connected to pins 'in_4[5]', 'in_20[5]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_4[4]' is connected to pins 'in_4[4]', 'in_20[4]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_4[3]' is connected to pins 'in_4[3]', 'in_20[3]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_4[2]' is connected to pins 'in_4[2]', 'in_20[2]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_4[1]' is connected to pins 'in_4[1]', 'in_20[1]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_4[0]' is connected to pins 'in_4[0]', 'in_20[0]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_5[7]' is connected to pins 'in_5[7]', 'in_21[7]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_5[6]' is connected to pins 'in_5[6]', 'in_21[6]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_5[5]' is connected to pins 'in_5[5]', 'in_21[5]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_5[4]' is connected to pins 'in_5[4]', 'in_21[4]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_5[3]' is connected to pins 'in_5[3]', 'in_21[3]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_5[2]' is connected to pins 'in_5[2]', 'in_21[2]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_5[1]' is connected to pins 'in_5[1]', 'in_21[1]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_5[0]' is connected to pins 'in_5[0]', 'in_21[0]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_6[7]' is connected to pins 'in_6[7]', 'in_22[7]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_6[6]' is connected to pins 'in_6[6]', 'in_22[6]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_6[5]' is connected to pins 'in_6[5]', 'in_22[5]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_6[4]' is connected to pins 'in_6[4]', 'in_22[4]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_6[3]' is connected to pins 'in_6[3]', 'in_22[3]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_6[2]' is connected to pins 'in_6[2]', 'in_22[2]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_6[1]' is connected to pins 'in_6[1]', 'in_22[1]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_6[0]' is connected to pins 'in_6[0]', 'in_22[0]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_7[7]' is connected to pins 'in_7[7]', 'in_23[7]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_7[6]' is connected to pins 'in_7[6]', 'in_23[6]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_7[5]' is connected to pins 'in_7[5]', 'in_23[5]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_7[4]' is connected to pins 'in_7[4]', 'in_23[4]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_7[3]' is connected to pins 'in_7[3]', 'in_23[3]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_7[2]' is connected to pins 'in_7[2]', 'in_23[2]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_7[1]' is connected to pins 'in_7[1]', 'in_23[1]''.
+Warning: In design 'fme_operativo_DATA_WIDTH8', the same net is connected to more than one pin on submodule 'mux_secundario'. (LINT-33)
+   Net 'out_int_inf_7[0]' is connected to pins 'in_7[0]', 'in_23[0]''.
+1

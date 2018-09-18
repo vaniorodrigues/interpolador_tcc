@@ -1,0 +1,203 @@
+tcbn45gsbwpbc_ccs
+
+#BEGIN_XCHECK_LIBRARY
+
+Logic Library #1:
+    Library name              tcbn45gsbwpbc_ccs
+    File name                 /home/library/tsmc_library/45nm/nominal_vt/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwp_120a/tcbn45gsbwpbc_ccs.db
+    Library type              pg_pin based db
+    Library Version           120
+    Tool Created              A-2007.12-SP1
+    Data Created              Fri Nov 13 08:53:37 CST 2009 
+    Time unit                 1ns
+    Capacitance unit          1000ff
+    Leakage power unit        1nW
+    Current unit              1mA
+check_library options         
+Version                       L-2016.06-SP1
+Check date and time           Tue Nov 14 16:44:24 2017
+
+
+#BEGIN_LIBSCREEN_UPF
+
+Library#1 (tcbn45gsbwpbc_ccs):
+PG checking passed.
+No power management cells in library#1.
+
+#END_LIBSCREEN_UPF
+
+#BEGIN_XCHECK_LOGICCELLS
+
+
+#END_XCHECK_LOGICCELLS
+
+#BEGIN_XCHECK_LOGICPINS
+
+
+
+#END_XCHECK_LOGICPINS
+
+#BEGIN_XCHECK_LOGICPGPINS
+
+Number of cells missing pg_pins in library 1:   0 (out of 836)
+
+#END_XCHECK_LOGICPGPINS
+
+#BEGIN_XCHECK_ARCS
+
+
+#END_XCHECK_ARCS
+
+
+#END_XCHECK_LIBRARY
+
+tcbn45gsbwpwc_ccs
+
+#BEGIN_XCHECK_LIBRARY
+
+Logic Library #1:
+    Library name              tcbn45gsbwpwc_ccs
+    File name                 /home/library/tsmc_library/45nm/nominal_vt/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwp_120a/tcbn45gsbwpwc_ccs.db
+    Library type              pg_pin based db
+    Library Version           120
+    Tool Created              A-2007.12-SP1
+    Data Created              Mon Nov 16 10:02:56 CST 2009 
+    Time unit                 1ns
+    Capacitance unit          1000ff
+    Leakage power unit        1nW
+    Current unit              1mA
+check_library options         
+Version                       L-2016.06-SP1
+Check date and time           Tue Nov 14 16:44:25 2017
+
+
+#BEGIN_LIBSCREEN_UPF
+
+Library#1 (tcbn45gsbwpwc_ccs):
+PG checking passed.
+No power management cells in library#1.
+
+#END_LIBSCREEN_UPF
+
+#BEGIN_XCHECK_LOGICCELLS
+
+
+#END_XCHECK_LOGICCELLS
+
+#BEGIN_XCHECK_LOGICPINS
+
+
+
+#END_XCHECK_LOGICPINS
+
+#BEGIN_XCHECK_LOGICPGPINS
+
+Number of cells missing pg_pins in library 1:   0 (out of 836)
+
+#END_XCHECK_LOGICPGPINS
+
+#BEGIN_XCHECK_ARCS
+
+
+#END_XCHECK_ARCS
+
+
+#END_XCHECK_LIBRARY
+
+Memory usage for this session 2546 Mbytes.
+CPU usage for this session 8 seconds ( 0.00 hours ).
+
+Thank you...
+Loading db file '/home/library/tsmc_library/45nm/nominal_vt/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwp_120a/tcbn45gsbwptc_ccs.db'
+
+#BEGIN_XCHECK_LIBRARY
+
+Logic Library:    tcbn45gsbwptc_ccs 
+Physical Library: /home/library/tsmc_library/45nm/nominal_vt/digital/Back_End/milkyway/tcbn45gsbwp_120a/frame_only_HVH_0d5_0/tcbn45gsbwp 
+check_library options: 	
+Version: 				L-2016.03-SP1
+Check date and time:	Tue Nov 14 16:44:42 2017
+
+          List of logic library and file names
+------------------------------------------------------------------------------
+Logic library name           Logic library file name
+------------------------------------------------------------------------------
+tcbn45gsbwptc_ccs            /home/library/tsmc_library/45nm/nominal_vt/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwp_120a/tcbn45gsbwptc_ccs.db
+------------------------------------------------------------------------------
+
+#BEGIN_XCHECK_LOGICCELLS
+
+Number of cells missing in logic library:	25 (out of 836)
+
+Information: List of cells missing in logic library (LIBCHK-210)
+-------------------------------------------------------------------------
+Cell name                  Cell type             Physical library
+-------------------------------------------------------------------------
+TAPCELLBWP                 Core                  tcbn45gsbwp
+LVLLHCLOD8BWP              Core                  tcbn45gsbwp
+LVLLHD1BWP                 Core                  tcbn45gsbwp
+LVLLHD2BWP                 Core                  tcbn45gsbwp
+LVLLHD4BWP                 Core                  tcbn45gsbwp
+LVLLHD8BWP                 Core                  tcbn45gsbwp
+LVLHLD1BWP                 Core                  tcbn45gsbwp
+LVLHLD2BWP                 Core                  tcbn45gsbwp
+LVLHLD4BWP                 Core                  tcbn45gsbwp
+LVLHLD8BWP                 Core                  tcbn45gsbwp
+LVLLHCD1BWP                Core                  tcbn45gsbwp
+LVLLHCD2BWP                Core                  tcbn45gsbwp
+LVLLHCD4BWP                Core                  tcbn45gsbwp
+LVLLHCD8BWP                Core                  tcbn45gsbwp
+LVLLHCLOD1BWP              Core                  tcbn45gsbwp
+LVLLHCLOD2BWP              Core                  tcbn45gsbwp
+LVLLHCLOD4BWP              Core                  tcbn45gsbwp
+ISOHID1BWP                 Core                  tcbn45gsbwp
+ISOHID2BWP                 Core                  tcbn45gsbwp
+ISOHID4BWP                 Core                  tcbn45gsbwp
+ISOHID8BWP                 Core                  tcbn45gsbwp
+ISOLOD1BWP                 Core                  tcbn45gsbwp
+ISOLOD2BWP                 Core                  tcbn45gsbwp
+ISOLOD4BWP                 Core                  tcbn45gsbwp
+ISOLOD8BWP                 Core                  tcbn45gsbwp
+-------------------------------------------------------------------------
+
+Information: List of physical only cells (LIBCHK-119)
+-------------------------------------------------------------------------
+Cell name                  Cell type             Physical library
+-------------------------------------------------------------------------
+FILL3BWP                   Filler                tcbn45gsbwp
+FILL4BWP                   Filler                tcbn45gsbwp
+FILL64BWP                  Filler                tcbn45gsbwp
+FILL8BWP                   Filler                tcbn45gsbwp
+FILL16BWP                  Filler                tcbn45gsbwp
+FILL1BWP                   Filler                tcbn45gsbwp
+FILL2BWP                   Filler                tcbn45gsbwp
+FILL32BWP                  Filler                tcbn45gsbwp
+-------------------------------------------------------------------------
+
+#END_XCHECK_LOGICCELLS
+
+#BEGIN_XCHECK_PHYSICALCELLS
+
+Number of cells missing in physical library:	0 (out of 869)
+
+#END_XCHECK_PHYSICALCELLS
+
+#BEGIN_XCHECK_PINS
+
+Number of cells with missing or mismatched pins in libraries:	0
+
+#END_XCHECK_PINS
+
+#BEGIN_XCHECK_CELLANTENNADIODETYPE
+
+Number of cells with inconsistent antenna_diode_type:	0
+
+#END_XCHECK_CELLANTENNADIODETYPE
+
+Logic vs. physical library check summary:
+Number of cells missing in logic library:	25 
+Information: Logic library is INCONSISTENT with physical library (LIBCHK-220)
+
+#END_XCHECK_LIBRARY
+
+0

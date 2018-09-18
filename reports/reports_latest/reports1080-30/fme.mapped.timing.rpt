@@ -1,0 +1,95 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : fme
+Version: L-2016.03-SP1
+Date   : Tue Nov 14 15:53:57 2017
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: NCCOM   Library: tcbn45gsbwptc_ccs
+Wire Load Model Mode: Inactive.
+
+  Startpoint: fme_con/state_reg_2_
+              (rising edge-triggered flip-flop clocked by CLOCK)
+  Endpoint: out_13[4] (output port clocked by CLOCK)
+  Path Group: CLOCK
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock CLOCK (rise edge)                                           0.00       0.00
+  clock network delay (ideal)                                       2.77       2.77
+  fme_con/state_reg_2_/CP (EDFCNQD1BWP)                   1.19      0.00 #     2.77 r
+  fme_con/state_reg_2_/Q (EDFCNQD1BWP)                    0.02      0.22       2.99 f
+  fme_con/state[2] (net)                        5                   0.00       2.99 f
+  fme_con/U3/ZN (INVD0BWP)                                0.02      0.02 *     3.01 r
+  fme_con/n16 (net)                             2                   0.00       3.01 r
+  fme_con/U4/ZN (NR2XD0BWP)                               0.03      0.03 *     3.03 f
+  fme_con/n14 (net)                             5                   0.00       3.03 f
+  fme_con/U5/ZN (INVD0BWP)                                0.06      0.04 *     3.08 r
+  fme_con/n24 (net)                             6                   0.00       3.08 r
+  fme_con/U11/ZN (ND2D0BWP)                               0.04      0.03 *     3.11 f
+  fme_con/direction_buffer_int (net)            1                   0.00       3.11 f
+  fme_con/direction_buffer_int (fme_controle_DATA_WIDTH8)           0.00       3.11 f
+  n3 (net)                                                          0.00       3.11 f
+  U1/Z (BUFFD6BWP)                                        0.18      0.13 *     3.24 f
+  n4 (net)                                    164                   0.00       3.24 f
+  fme_con/IN0 (fme_controle_DATA_WIDTH8)                            0.00       3.24 f
+  fme_con/IN0 (net)                                                 0.00       3.24 f
+  fme_con/U12/ZN (INVD0BWP)                               0.09      0.08 *     3.32 r
+  fme_con/n30 (net)                             3                   0.00       3.32 r
+  fme_con/U25/ZN (ND2D0BWP)                               0.06      0.05 *     3.37 f
+  fme_con/direction_buffer_b (net)              2                   0.00       3.37 f
+  fme_con/direction_buffer_b (fme_controle_DATA_WIDTH8)             0.00       3.37 f
+  direction_buffer_b (net)                                          0.00       3.37 f
+  U3/Z (CKBD4BWP)                                         0.20      0.14 *     3.51 f
+  n7 (net)                                     81                   0.00       3.51 f
+  fme_op/direction_buffer_a (fme_operativo_DATA_WIDTH8)             0.00       3.51 f
+  fme_op/direction_buffer_a (net)                                   0.00       3.51 f
+  fme_op/buffer_a_superior/direction (buffer_ah_DATA_WIDTH8_5)      0.00       3.51 f
+  fme_op/buffer_a_superior/direction (net)                          0.00       3.51 f
+  fme_op/buffer_a_superior/U9/Z (BUFFD1BWP)               0.09      0.16 *     3.66 f
+  fme_op/buffer_a_superior/n45 (net)           23                   0.00       3.66 f
+  fme_op/buffer_a_superior/U10/ZN (INVD0BWP)              0.17      0.12 *     3.79 r
+  fme_op/buffer_a_superior/n46 (net)           14                   0.00       3.79 r
+  fme_op/buffer_a_superior/U42/Z (OA22D0BWP)              0.09      0.09 *     3.88 r
+  fme_op/buffer_a_superior/out_4[8] (net)       9                   0.00       3.88 r
+  fme_op/buffer_a_superior/out_4[8] (buffer_ah_DATA_WIDTH8_5)       0.00       3.88 r
+  fme_op/out_a_sup_4[8] (net)                                       0.00       3.88 r
+  fme_op/U394/ZN (IAO21D1BWP)                             0.20      0.14 *     4.02 r
+  fme_op/out_13[4] (net)                        1                   0.00       4.02 r
+  fme_op/out_13[4] (fme_operativo_DATA_WIDTH8)                      0.00       4.02 r
+  out_13[4] (net)                                                   0.00       4.02 r
+  out_13[4] (out)                                         0.20      0.00 *     4.02 r
+  data arrival time                                                            4.02
+
+  clock CLOCK (rise edge)                                          39.57      39.57
+  clock network delay (ideal)                                       2.77      42.34
+  clock uncertainty                                                -3.96      38.38
+  output external delay                                           -23.74      14.64
+  data required time                                                          14.64
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                          14.64
+  data arrival time                                                           -4.02
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                 10.62
+
+
+1

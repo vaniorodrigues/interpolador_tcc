@@ -1,0 +1,12 @@
+COMPILAR/EXECUTAR
+	iverilog -W all -s accumulator_tb accumulator.v accumulator_tb.v  -o nome_executavel -y (pasta modulos internos)
+					-s TOP_MODULE [lista dos verilogs]
+	./nome_executavel
+
+OU
+	iverilog -o accumulator accumulator_tb.v accumulator.v
+	./nome_executavel
+
+Rodas filtros:
+	iverilog -W all -s filtros_tb filtros.v filtros_tb.v -o filtros -y ~/Documents/TCCx/filtros
+	mac : iverilog -W all  -s filtros_tb filtros.v filtros_tb.v -y ~/tccmac/arquitetura

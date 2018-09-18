@@ -1,0 +1,72 @@
+$date
+	Fri May 26 15:59:06 2017
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module filtroup_tb $end
+$var reg 1 ! clock $end
+$upscope $end
+$scope module filtroup_tb $end
+$var reg 1 " reset $end
+$upscope $end
+$scope module filtroup_tb $end
+$var reg 1 # enable $end
+$upscope $end
+$scope module filtroup_tb $end
+$var reg 10 $ in0 [9:0] $end
+$upscope $end
+$scope module filtroup_tb $end
+$var reg 10 % in1 [9:0] $end
+$upscope $end
+$scope module filtroup_tb $end
+$var reg 10 & in2 [9:0] $end
+$upscope $end
+$scope module filtroup_tb $end
+$var reg 10 ' in3 [9:0] $end
+$upscope $end
+$scope module filtroup_tb $end
+$var reg 10 ( in4 [9:0] $end
+$upscope $end
+$scope module filtroup_tb $end
+$var reg 10 ) in5 [9:0] $end
+$upscope $end
+$scope module filtroup_tb $end
+$var reg 10 * in6 [9:0] $end
+$upscope $end
+$scope module filtroup_tb $end
+$var wire 10 + out [9:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx +
+bx *
+bx )
+bx (
+bx '
+bx &
+bx %
+bx $
+0#
+0"
+0!
+$end
+#5
+b1110100 +
+1!
+b10000 *
+b11110 )
+b11111011 (
+b110110 '
+b10001 &
+b10001110 %
+b11101000 $
+1#
+#10
+0!
+#15
+1!

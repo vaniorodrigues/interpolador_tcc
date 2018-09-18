@@ -1,0 +1,129 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : fme
+Version: L-2016.03-SP1
+Date   : Tue Nov 14 20:17:27 2017
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: NCCOM   Library: tcbn45gsbwptc_ccs
+Wire Load Model Mode: Inactive.
+
+  Startpoint: fme_con/state_reg_3_
+              (rising edge-triggered flip-flop clocked by CLOCK)
+  Endpoint: fme_op/buffer_b_superior/tb_cell_0_3/out_reg_9_
+            (rising edge-triggered flip-flop clocked by CLOCK)
+  Path Group: CLOCK
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock CLOCK (rise edge)                                           0.00       0.00
+  clock network delay (ideal)                                       0.09       0.09
+  fme_con/state_reg_3_/CP (EDFCNQD4BWP)                   0.04      0.00 #     0.09 r
+  fme_con/state_reg_3_/Q (EDFCNQD4BWP)                    0.02      0.07       0.16 r
+  fme_con/state[3] (net)                        5                   0.00       0.16 r
+  fme_con/U9/ZN (INVD4BWP)                                0.01      0.01 *     0.17 f
+  fme_con/n8 (net)                              4                   0.00       0.17 f
+  fme_con/U10/ZN (ND2D4BWP)                               0.01      0.01 *     0.18 r
+  fme_con/n6 (net)                              3                   0.00       0.18 r
+  fme_con/U12/ZN (INVD3BWP)                               0.01      0.01 *     0.19 f
+  fme_con/n50 (net)                             1                   0.00       0.19 f
+  fme_con/U11/ZN (ND2D3BWP)                               0.03      0.02 *     0.21 r
+  fme_con/n51 (net)                             2                   0.00       0.21 r
+  fme_con/U65/ZN (CKND2D8BWP)                             0.09      0.06 *     0.27 f
+  fme_con/direction_buffer_a (net)             18                   0.00       0.27 f
+  fme_con/direction_buffer_a (fme_controle_DATA_WIDTH8)             0.00       0.27 f
+  direction_buffer_a (net)                                          0.00       0.27 f
+  fme_op/direction_buffer_b (fme_operativo_DATA_WIDTH8)             0.00       0.27 f
+  fme_op/direction_buffer_b (net)                                   0.00       0.27 f
+  fme_op/buffer_b_superior/direction (buffer_ah_DATA_WIDTH8_3)      0.00       0.27 f
+  fme_op/buffer_b_superior/direction (net)                          0.00       0.27 f
+  fme_op/buffer_b_superior/U110/Z (BUFFD8BWP)             0.03      0.06 *     0.32 f
+  fme_op/buffer_b_superior/n62 (net)           25                   0.00       0.32 f
+  fme_op/buffer_b_superior/U40/Z (CKMUX2D1BWP)            0.02      0.04 *     0.36 f
+  fme_op/buffer_b_superior/out_2[5] (net)       2                   0.00       0.36 f
+  fme_op/buffer_b_superior/out_2[5] (buffer_ah_DATA_WIDTH8_3)       0.00       0.36 f
+  fme_op/out_b_sup_2[5] (net)                                       0.00       0.36 f
+  fme_op/mux_primario/in_42[5] (mux3x1_DATA_WIDTH8_1)               0.00       0.36 f
+  fme_op/mux_primario/in_42[5] (net)                                0.00       0.36 f
+  fme_op/mux_primario/U138/ZN (AOI22D1BWP)                0.07      0.04 *     0.40 r
+  fme_op/mux_primario/n87 (net)                 1                   0.00       0.40 r
+  fme_op/mux_primario/U139/ZN (IOA21D4BWP)                0.10      0.08 *     0.48 f
+  fme_op/mux_primario/out_10[5] (net)          23                   0.00       0.48 f
+  fme_op/mux_primario/out_10[5] (mux3x1_DATA_WIDTH8_1)              0.00       0.48 f
+  fme_op/out_muxp_10[5] (net)                                       0.00       0.48 f
+  fme_op/filtro_primario/in_10[5] (filtros_DATA_WIDTH8_1)           0.00       0.48 f
+  fme_op/filtro_primario/in_10[5] (net)                             0.00       0.48 f
+  fme_op/filtro_primario/filtromiddle_cell_04/in7[5] (filtromiddle_DATA_WIDTH8_14)     0.00     0.48 f
+  fme_op/filtro_primario/filtromiddle_cell_04/in7[5] (net)          0.00       0.48 f
+  fme_op/filtro_primario/filtromiddle_cell_04/U56/ZN (CKND1BWP)     0.09     0.08 *     0.56 r
+  fme_op/filtro_primario/filtromiddle_cell_04/n399 (net)     1      0.00       0.56 r
+  fme_op/filtro_primario/filtromiddle_cell_04/U35/S (FA1D0BWP)     0.03     0.10 *     0.65 f
+  fme_op/filtro_primario/filtromiddle_cell_04/n41 (net)     1       0.00       0.65 f
+  fme_op/filtro_primario/filtromiddle_cell_04/U60/S (FA1D0BWP)     0.03     0.08 *     0.73 r
+  fme_op/filtro_primario/filtromiddle_cell_04/n66 (net)     1       0.00       0.73 r
+  fme_op/filtro_primario/filtromiddle_cell_04/U75/CO (FA1D0BWP)     0.03     0.05 *     0.78 r
+  fme_op/filtro_primario/filtromiddle_cell_04/n60 (net)     1       0.00       0.78 r
+  fme_op/filtro_primario/filtromiddle_cell_04/U71/CO (FA1D0BWP)     0.05     0.06 *     0.84 r
+  fme_op/filtro_primario/filtromiddle_cell_04/n46 (net)     1       0.00       0.84 r
+  fme_op/filtro_primario/filtromiddle_cell_04/U63/S (FA1D0BWP)     0.03     0.09 *     0.93 f
+  fme_op/filtro_primario/filtromiddle_cell_04/n163 (net)     2      0.00       0.93 f
+  fme_op/filtro_primario/filtromiddle_cell_04/U72/ZN (NR2XD0BWP)     0.04     0.03 *     0.96 r
+  fme_op/filtro_primario/filtromiddle_cell_04/n344 (net)     3      0.00       0.96 r
+  fme_op/filtro_primario/filtromiddle_cell_04/U73/ZN (NR2XD0BWP)     0.03     0.03 *     0.98 f
+  fme_op/filtro_primario/filtromiddle_cell_04/n167 (net)     1      0.00       0.98 f
+  fme_op/filtro_primario/filtromiddle_cell_04/U136/ZN (AOI21D2BWP)     0.06     0.04 *     1.02 r
+  fme_op/filtro_primario/filtromiddle_cell_04/n328 (net)     2      0.00       1.02 r
+  fme_op/filtro_primario/filtromiddle_cell_04/U199/ZN (OAI21D4BWP)     0.03     0.03 *     1.05 f
+  fme_op/filtro_primario/filtromiddle_cell_04/n370 (net)     4      0.00       1.05 f
+  fme_op/filtro_primario/filtromiddle_cell_04/U125/ZN (CKND0BWP)     0.02     0.02 *     1.07 r
+  fme_op/filtro_primario/filtromiddle_cell_04/n419 (net)     1      0.00       1.07 r
+  fme_op/filtro_primario/filtromiddle_cell_04/U122/ZN (OAI21D0BWP)     0.03     0.02 *     1.09 f
+  fme_op/filtro_primario/filtromiddle_cell_04/n418 (net)     1      0.00       1.09 f
+  fme_op/filtro_primario/filtromiddle_cell_04/U97/ZN (XNR2D0BWP)     0.02     0.04 *     1.13 r
+  fme_op/filtro_primario/filtromiddle_cell_04/out[9] (net)     1     0.00      1.13 r
+  fme_op/filtro_primario/filtromiddle_cell_04/out[9] (filtromiddle_DATA_WIDTH8_14)     0.00     1.13 r
+  fme_op/filtro_primario/out_12[9] (net)                            0.00       1.13 r
+  fme_op/filtro_primario/out_12[9] (filtros_DATA_WIDTH8_1)          0.00       1.13 r
+  fme_op/out_filp_12[9] (net)                                       0.00       1.13 r
+  fme_op/buffer_b_superior/in_3[9] (buffer_ah_DATA_WIDTH8_3)        0.00       1.13 r
+  fme_op/buffer_b_superior/in_3[9] (net)                            0.00       1.13 r
+  fme_op/buffer_b_superior/tb_cell_0_3/in_0[9] (transpose_buffer_cell_DATA_WIDTH10_284)     0.00     1.13 r
+  fme_op/buffer_b_superior/tb_cell_0_3/in_0[9] (net)                0.00       1.13 r
+  fme_op/buffer_b_superior/tb_cell_0_3/U7/Z (AO22D0BWP)     0.02     0.03 *     1.16 r
+  fme_op/buffer_b_superior/tb_cell_0_3/n12 (net)     1              0.00       1.16 r
+  fme_op/buffer_b_superior/tb_cell_0_3/out_reg_9_/D (EDFCNQD1BWP)     0.02     0.00 *     1.16 r
+  data arrival time                                                            1.16
+
+  clock CLOCK (rise edge)                                           1.24       1.24
+  clock network delay (ideal)                                       0.09       1.32
+  clock uncertainty                                                -0.12       1.20
+  fme_op/buffer_b_superior/tb_cell_0_3/out_reg_9_/CP (EDFCNQD1BWP)     0.00     1.20 r
+  library setup time                                               -0.04       1.16
+  data required time                                                           1.16
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           1.16
+  data arrival time                                                           -1.16
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.00
+
+
+1

@@ -1,0 +1,105 @@
+ 
+****************************************
+Report : timing
+        -path full_clock
+        -delay max
+        -physical
+        -derate
+        -input_pins
+        -nets
+        -max_paths 1
+        -transition_time
+        -crosstalk_delta
+        -capacitance
+Design : fme
+Version: L-2016.03-SP1
+Date   : Tue Nov 14 16:53:48 2017
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: NCCOM   Library: tcbn45gsbwptc_ccs
+Wire Load Model Mode: Inactive.
+
+  Startpoint: fme_con/state_reg_2_
+              (rising edge-triggered flip-flop clocked by CLOCK)
+  Endpoint: out_33[2] (output port clocked by CLOCK)
+  Path Group: CLOCK
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock CLOCK (rise edge)                                                                                   0.000      0.000
+  clock network delay (ideal)                                                                               1.385      1.385
+  fme_con/state_reg_2_/CP (EDFCNQD1BWP)                            0.000     0.594     0.000                0.000 #    1.385 r    ( 1.36,210.78)
+  fme_con/state_reg_2_/Q (EDFCNQD1BWP)                                       0.019                          0.151      1.536 f    ( 4.65,210.89)
+  fme_con/state[2] (net)                        5        0.004                                              0.000      1.536 f    [0.00,0.00]
+  fme_con/U3/I (INVD0BWP)                                          0.000     0.019     0.000                0.000 *    1.536 f    ( 6.32,211.79)
+  fme_con/U3/ZN (INVD0BWP)                                                   0.022                          0.019      1.555 r    ( 6.55,211.82)
+  fme_con/n16 (net)                             2        0.001                                              0.000      1.555 r    [0.00,0.00]
+  fme_con/U4/A2 (NR2XD0BWP)                                        0.000     0.022     0.000                0.000 *    1.555 r    ( 6.34,211.90)
+  fme_con/U4/ZN (NR2XD0BWP)                                                  0.040                          0.031      1.586 f    ( 6.65,211.94)
+  fme_con/n14 (net)                             6        0.004                                              0.000      1.586 f    [0.00,0.00]
+  fme_con/U5/I (INVD0BWP)                                          0.000     0.040     0.000                0.000 *    1.586 f    ( 7.59,211.19)
+  fme_con/U5/ZN (INVD0BWP)                                                   0.059                          0.046      1.632 r    ( 7.82,211.23)
+  fme_con/n24 (net)                             5        0.005                                              0.000      1.632 r    [0.00,0.00]
+  fme_con/U8/A1 (CKND2D3BWP)                                       0.000     0.059     0.000                0.000 *    1.632 r    ( 9.51,214.29)
+  fme_con/U8/ZN (CKND2D3BWP)                                                 0.210                          0.139      1.771 f    ( 9.89,214.34)
+  fme_con/direction_buffer_int (net)           20        0.082                                              0.000      1.771 f    [0.07,0.08]
+  fme_con/U13/I (INVD0BWP)                                         0.000     0.210     0.000                0.000 *    1.771 f    (10.45,213.54)
+  fme_con/U13/ZN (INVD0BWP)                                                  0.073                          0.060      1.831 r    (10.69,213.57)
+  fme_con/n36 (net)                             3        0.002                                              0.000      1.831 r    [0.00,0.00]
+  fme_con/U18/A1 (ND2D0BWP)                                        0.000     0.073     0.000                0.000 *    1.831 r    (11.21,213.53)
+  fme_con/U18/ZN (ND2D0BWP)                                                  0.050                          0.044      1.875 f    (11.27,213.60)
+  fme_con/direction_buffer_b (net)              2        0.002                                              0.000      1.875 f    [0.00,0.00]
+  fme_con/direction_buffer_b (fme_controle_DATA_WIDTH8)                                                     0.000      1.875 f    (netlink)
+  direction_buffer_b (net)                               0.002                                              0.000      1.875 f    [0.00,0.00]
+  U2/I (BUFFD3BWP)                                                 0.000     0.050     0.000                0.000 *    1.875 f    (10.52,213.58)
+  U2/Z (BUFFD3BWP)                                                           0.170                          0.125      2.000 f    (11.16,213.52)
+  n6 (net)                                     56        0.124                                              0.000      2.000 f    [0.09,0.12]
+  fme_op/direction_buffer_b (fme_operativo_DATA_WIDTH8)                                                     0.000      2.000 f    (netlink)
+  fme_op/direction_buffer_b (net)                        0.124                                              0.000      2.000 f    [0.09,0.12]
+  fme_op/buffer_b_superior/direction (buffer_ah_DATA_WIDTH8_3)                                              0.000      2.000 f    (netlink)
+  fme_op/buffer_b_superior/direction (net)               0.124                                              0.000      2.000 f    [0.09,0.12]
+  fme_op/buffer_b_superior/U8/I (BUFFD1BWP)                        0.000     0.170     0.000                0.011 *    2.010 f    (33.41,106.47)
+  fme_op/buffer_b_superior/U8/Z (BUFFD1BWP)                                  0.092                          0.105      2.115 f    (33.80,106.44)
+  fme_op/buffer_b_superior/n44 (net)           23        0.021                                              0.000      2.115 f    [0.01,0.02]
+  fme_op/buffer_b_superior/U9/I (INVD0BWP)                         0.000     0.092     0.000                0.000 *    2.115 f    (34.60,117.78)
+  fme_op/buffer_b_superior/U9/ZN (INVD0BWP)                                  0.182                          0.130      2.245 r    (34.83,117.81)
+  fme_op/buffer_b_superior/n45 (net)           16        0.016                                              0.000      2.245 r    [0.00,0.02]
+  fme_op/buffer_b_superior/U62/A1 (OA22D0BWP)                      0.000     0.182     0.000                0.000 *    2.245 r    (38.12,115.17)
+  fme_op/buffer_b_superior/U62/Z (OA22D0BWP)                                 0.086                          0.091      2.337 r    (38.82,115.16)
+  fme_op/buffer_b_superior/out_6[8] (net)       9        0.008                                              0.000      2.337 r    [0.00,0.01]
+  fme_op/buffer_b_superior/out_6[8] (buffer_ah_DATA_WIDTH8_3)                                               0.000      2.337 r    (netlink)
+  fme_op/out_b_sup_6[8] (net)                            0.008                                              0.000      2.337 r    [0.00,0.01]
+  fme_op/U274/A1 (IAO21D1BWP)                                      0.000     0.086     0.000                0.000 *    2.337 r    (37.66,129.96)
+  fme_op/U274/ZN (IAO21D1BWP)                                                0.205                          0.143      2.480 r    (38.39,130.01)
+  fme_op/out_33[2] (net)                        1        0.020                                              0.000      2.480 r    [0.00,0.02]
+  fme_op/out_33[2] (fme_operativo_DATA_WIDTH8)                                                              0.000      2.480 r    (netlink)
+  out_33[2] (net)                                        0.020                                              0.000      2.480 r    [0.00,0.02]
+  out_33[2] (out)                                                  0.000     0.205     0.000                0.001 *    2.481 r    ( 0.04,134.75)
+  data arrival time                                                                                                    2.481
+
+  clock CLOCK (rise edge)                                                                                  19.785     19.785
+  clock network delay (ideal)                                                                               1.385     21.170
+  clock uncertainty                                                                                        -1.978     19.191
+  output external delay                                                                                   -11.871      7.320
+  data required time                                                                                                   7.320
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                   7.320
+  data arrival time                                                                                                   -2.481
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                          4.839
+
+
+1

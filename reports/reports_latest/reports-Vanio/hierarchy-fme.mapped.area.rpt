@@ -1,0 +1,74 @@
+ 
+****************************************
+Report : area
+Design : fme
+Version: L-2016.03-SP1
+Date   : Tue Nov 14 17:23:51 2017
+****************************************
+
+Library(s) Used:
+
+    tcbn45gsbwptc_ccs (File: /home/library/tsmc_library/45nm/nominal_vt/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwp_120a/tcbn45gsbwptc_ccs.db)
+
+Number of ports:                        53263
+Number of nets:                         92072
+Number of cells:                        36594
+Number of combinational cells:          20232
+Number of sequential cells:             14657
+Number of macros/black boxes:               0
+Number of buf/inv:                       5072
+Number of references:                       4
+
+Combinational area:              42708.204354
+Buf/Inv area:                     2955.934896
+Noncombinational area:           80986.477470
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                123694.681824
+Total area:                 undefined
+
+Core Area:                    206833
+Aspect Ratio:                 1.0003
+Utilization Ratio:            0.5981
+
+
+The above information was reported from the logical library. The following are from the physical library:
+
+  Total moveable cell area: 123694.7
+  Total fixed cell area: 0.0
+  Total physical cell area: 123694.7
+ Core area: 0.000, 0.000, 454.720, 454.860
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area             Local cell area
+                                  --------------------  ------------------------------ 
+Hierarchical cell                 Absolute     Percent  Combi-      Noncombi-   Black-
+                                  Total        Total    national    national    boxes   Design
+--------------------------------  -----------  -------  ----------  ----------  ------  --------------------------------------
+fme                               123694.6818    100.0      4.4100      0.0000  0.0000  fme
+fme_con                               65.9736      0.1     40.5720     25.4016  0.0000  fme_controle_DATA_WIDTH8
+fme_op                            123624.2982     99.9    584.4132     54.1548  0.0000  fme_operativo_DATA_WIDTH8
+fme_op/buffer_a_inferior            5553.7777      4.5    155.7612      0.0000  0.0000  buffer_ah_DATA_WIDTH8_4
+fme_op/buffer_a_superior            5550.2497      4.5    152.4096      0.0000  0.0000  buffer_ah_DATA_WIDTH8_5
+fme_op/buffer_b_inferior            5552.3665      4.5    153.9972      0.0000  0.0000  buffer_ah_DATA_WIDTH8_2
+fme_op/buffer_b_superior            5556.6001      4.5    158.2308      0.0000  0.0000  buffer_ah_DATA_WIDTH8_3
+fme_op/buffer_c_inferior            5555.7181      4.5    156.9960      0.0000  0.0000  buffer_ah_DATA_WIDTH8_0
+fme_op/buffer_c_superior            5553.0721      4.5    155.2320      0.0000  0.0000  buffer_ah_DATA_WIDTH8_1
+fme_op/buffer_diag_a               12190.2988      9.9    320.6952    762.0480  0.0000  buffer_diagonais_DATA_WIDTH8_2
+fme_op/buffer_diag_b               12196.1200      9.9    329.1624    762.0480  0.0000  buffer_diagonais_DATA_WIDTH8_1
+fme_op/buffer_diag_b/cell_0_0         45.6876      0.0      0.5292     45.1584  0.0000  buffer_cell_DATA_WIDTH8_485
+fme_op/buffer_diag_c               12194.3560      9.9    329.6916    762.0480  0.0000  buffer_diagonais_DATA_WIDTH8_0
+fme_op/buffer_int_inferior          8198.5430      6.6    451.5840      0.0000  0.0000  buffer_int_DATA_WIDTH8_0
+fme_op/buffer_int_superior          8203.3058      6.6    457.7580      0.0000  0.0000  buffer_int_DATA_WIDTH8_1
+fme_op/buffer_ver                  10193.2743      8.2    320.8716      0.0000  0.0000  buffer_verticais_DATA_WIDTH8
+fme_op/filtro_primario             12916.3609     10.4     39.3372      0.0000  0.0000  filtros_DATA_WIDTH8_1
+fme_op/filtro_secundario           12900.8377     10.4     14.1120      0.0000  0.0000  filtros_DATA_WIDTH8_0
+fme_op/mux_primario                  365.3244      0.3    365.3244      0.0000  0.0000  mux3x1_DATA_WIDTH8_1
+fme_op/mux_secundario                305.5248      0.2    305.5248      0.0000  0.0000  mux3x1_DATA_WIDTH8_0
+--------------------------------  -----------  -------  ----------  ----------  ------  --------------------------------------
+Total                                                   42708.2044  80986.4775  0.0000
+
+1

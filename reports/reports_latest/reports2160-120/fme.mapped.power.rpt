@@ -1,0 +1,64 @@
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : fme
+Version: L-2016.03-SP1
+Date   : Tue Nov 14 20:04:16 2017
+****************************************
+
+
+Library(s) Used:
+
+    tcbn45gsbwptc_ccs (File: /home/library/tsmc_library/45nm/nominal_vt/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwp_120a/tcbn45gsbwptc_ccs.db)
+
+
+Operating Conditions: NCCOM   Library: tcbn45gsbwptc_ccs
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+Information: Reporting correlated power. (PWR-620)
+
+  Cell Internal Power  =  24.0514 mW   (77%)
+  Net Switching Power  =   7.1792 mW   (23%)
+                         ---------
+Total Dynamic Power    =  31.2306 mW  (100%)
+
+Cell Leakage Power     =   1.2014 mW
+
+Power Breakdown
+---------------
+
+                             Cell        Driven Net  Tot Dynamic      Cell
+                             Internal    Switching   Power (mW)       Leakage
+Cell                         Power (mW)  Power (mW)  (% Cell/Tot)     Power (nW)
+--------------------------------------------------------------------------------
+Netlist Power                  23.1269      1.7027   2.483e+01 (93%)  1.186e+06
+Estimated Clock Tree Power      0.9245      5.4764   6.401e+00 (14%)  1.503e+04
+--------------------------------------------------------------------------------
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          21.9211            0.3639        6.1820e+05           22.9032  (  88.03%)
+sequential     1.5620e-05        2.1116e-04           27.1821        2.5396e-04  (   0.00%)
+combinational      1.2058            1.3386        5.6813e+05            3.1126  (  11.96%)
+--------------------------------------------------------------------------------------------------
+Total             23.1270 mW         1.7027 mW     1.1864e+06 nW        26.0160 mW
+1

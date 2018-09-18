@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : self_gating
+        -nosplit
+Design : fme
+Version: L-2016.03-SP1
+Date   : Tue Nov 14 17:39:22 2017
+****************************************
+
+  
+
+                             XOR Self Gating Summary
+          ------------------------------------------------------------
+          |    Number of self-gating cells        |        0         |
+          |                                       |                  |
+          |    Number of self gated registers     |     0 (0.00%)    |
+          |                                       |                  |
+          |    Number of registers not self-gated |     14591 (100.00%) |
+          |                                       |                  |
+          |    Total number of registers          |        14591     |
+          ------------------------------------------------------------
+  
+
+1

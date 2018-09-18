@@ -1,0 +1,67 @@
+ 
+****************************************
+Report : timing
+        -path full_clock
+        -delay min
+        -physical
+        -derate
+        -input_pins
+        -nets
+        -max_paths 1
+        -transition_time
+        -crosstalk_delta
+        -capacitance
+Design : fme
+Version: L-2016.03-SP1
+Date   : Tue Nov 14 17:08:28 2017
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: NCCOM   Library: tcbn45gsbwptc_ccs
+Wire Load Model Mode: Inactive.
+
+  Startpoint: fme_op/buffer_ver/cell_2_3/out_reg_5_
+              (rising edge-triggered flip-flop clocked by CLOCK)
+  Endpoint: fme_op/buffer_ver/cell_2_4/out_reg_5_
+            (rising edge-triggered flip-flop clocked by CLOCK)
+  Path Group: CLOCK
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock CLOCK (rise edge)                                                                                   0.000      0.000
+  clock network delay (ideal)                                                                               0.000      0.000
+  fme_op/buffer_ver/cell_2_3/out_reg_5_/CP (EDFCNQD1BWP)           0.000     0.000     0.000                0.000 #    0.000 r    (282.38,317.78)
+  fme_op/buffer_ver/cell_2_3/out_reg_5_/Q (EDFCNQD1BWP)                      0.009                          0.060      0.060 f    (285.67,317.89)
+  fme_op/buffer_ver/cell_2_3/out[5] (net)       1        0.001                                              0.000      0.060 f    [0.00,0.00]
+  fme_op/buffer_ver/cell_2_3/out[5] (buffer_cell_DATA_WIDTH8_861)                                           0.000      0.060 f    (netlink)
+  fme_op/buffer_ver/out_of_2_3[5] (net)                  0.001                                              0.000      0.060 f    [0.00,0.00]
+  fme_op/buffer_ver/cell_2_4/in[5] (buffer_cell_DATA_WIDTH8_834)                                            0.000      0.060 f    (netlink)
+  fme_op/buffer_ver/cell_2_4/in[5] (net)                 0.001                                              0.000      0.060 f    [0.00,0.00]
+  fme_op/buffer_ver/cell_2_4/out_reg_5_/D (EDFCNQD1BWP)            0.000     0.009     0.000                0.000 *    0.060 f    (285.67,317.28)
+  data arrival time                                                                                                    0.060
+
+  clock CLOCK (rise edge)                                                                                   0.000      0.000
+  clock network delay (ideal)                                                                               0.000      0.000
+  fme_op/buffer_ver/cell_2_4/out_reg_5_/CP (EDFCNQD1BWP)                                                    0.000      0.000 r
+  library hold time                                                                                        -0.005     -0.005
+  data required time                                                                                                  -0.005
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                  -0.005
+  data arrival time                                                                                                   -0.060
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                          0.065
+
+
+1
